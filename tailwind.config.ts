@@ -69,13 +69,18 @@ export default {
 				'hero-overlay': 'var(--hero-overlay)',
 				'section-gradient': 'var(--section-gradient)',
 				'card-gradient': 'var(--card-gradient)',
-				'text-gradient': 'var(--text-gradient)'
+				'text-gradient': 'var(--text-gradient)',
+				'ai-gradient': 'var(--ai-gradient)',
+				'neural-gradient': 'var(--neural-gradient)'
 			},
 			boxShadow: {
 				'custom-sm': 'var(--shadow-sm)',
 				'custom-md': 'var(--shadow-md)',
 				'custom-lg': 'var(--shadow-lg)',
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'ai-glow': 'var(--shadow-ai-glow)',
+				'neural': 'var(--shadow-neural)',
+				'cyber': 'var(--shadow-cyber)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -110,6 +115,31 @@ export default {
 				'glow': {
 					'0%, 100%': { boxShadow: 'var(--shadow-glow)' },
 					'50%': { boxShadow: '0 0 60px hsl(245 82% 52% / 0.5)' }
+				},
+				'ai-pulse': {
+					'0%, 100%': { 
+						boxShadow: 'var(--shadow-ai-glow)',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						boxShadow: '0 0 80px hsl(195 100% 50% / 0.5)',
+						transform: 'scale(1.02)'
+					}
+				},
+				'neural-flow': {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'particle-float': {
+					'0%, 100%': { transform: 'translateY(0px) translateX(0px)' },
+					'25%': { transform: 'translateY(-5px) translateX(2px)' },
+					'50%': { transform: 'translateY(-10px) translateX(0px)' },
+					'75%': { transform: 'translateY(-5px) translateX(-2px)' }
 				}
 			},
 			animation: {
@@ -117,7 +147,11 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in': 'slide-in 0.6s ease-out',
-				'glow': 'glow 2s ease-in-out infinite'
+				'glow': 'glow 2s ease-in-out infinite',
+				'ai-pulse': 'ai-pulse 3s ease-in-out infinite',
+				'neural-flow': 'neural-flow 6s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'particle-float': 'particle-float 4s ease-in-out infinite'
 			}
 		}
 	},
