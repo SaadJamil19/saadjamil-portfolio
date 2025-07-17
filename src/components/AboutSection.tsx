@@ -4,7 +4,7 @@ import { GraduationCap, Briefcase } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-section-gradient">
+    <section id="about-section" className="py-20 bg-section-gradient">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">

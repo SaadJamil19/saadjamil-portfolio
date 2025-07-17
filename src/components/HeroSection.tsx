@@ -3,6 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Phone, Brain, Zap, Code2, ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-hero-gradient overflow-hidden">
       {/* Background Pattern Overlay */}
@@ -62,9 +72,24 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         {/* Top Navigation Hint */}
         <div className="absolute top-8 right-8 hidden md:flex gap-8 text-sm opacity-80">
-          <span className="hover:text-cyan-400 transition-colors cursor-pointer">About</span>
-          <span className="hover:text-cyan-400 transition-colors cursor-pointer">Work</span>
-          <span className="hover:text-cyan-400 transition-colors cursor-pointer">Contact</span>
+          <button 
+            onClick={() => scrollToSection('about-section')}
+            className="hover:text-cyan-400 transition-colors cursor-pointer"
+          >
+            About
+          </button>
+          <button 
+            onClick={() => scrollToSection('projects-section')}
+            className="hover:text-cyan-400 transition-colors cursor-pointer"
+          >
+            Work
+          </button>
+          <button 
+            onClick={() => scrollToSection('contact-section')}
+            className="hover:text-cyan-400 transition-colors cursor-pointer"
+          >
+            Contact
+          </button>
         </div>
         
         {/* Brand/Logo */}
@@ -124,6 +149,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in animation-delay-400">
           <Button 
             size="lg" 
+            onClick={() => scrollToSection('projects-section')}
             className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-ai-glow hover:scale-105 transition-all duration-300 animate-ai-pulse"
           >
             <Brain className="w-5 h-5 mr-2" />
@@ -132,6 +158,7 @@ const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg"
+            onClick={() => scrollToSection('projects-section')}
             className="border-cyan-400/30 text-white hover:bg-cyan-400/10 hover:border-cyan-400/50 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
           >
             <Code2 className="w-5 h-5 mr-2" />
