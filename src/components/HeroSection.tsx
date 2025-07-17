@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Phone, Brain, Zap, Code2, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Brain, Zap, Code2, ChevronDown, Smartphone } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -118,21 +118,18 @@ const HeroSection = () => {
           
           <div className="max-w-4xl mx-auto space-y-4">
             <p className="text-xl md:text-2xl font-medium text-white/90">
-              I develop <span className="text-cyan-400">3D visuals</span>, 
-              <span className="text-blue-400"> mobile interfaces</span> and 
-              <span className="text-purple-400"> AI-powered systems</span>
+              Engineering seamless digital experiences—from mobile apps to automation and blockchain
             </p>
             <p className="text-lg md:text-xl opacity-80 max-w-2xl mx-auto leading-relaxed">
-              Crafting intelligent solutions with cutting-edge technology, 
-              blockchain innovation, and modern design principles
+              Blending clean design with robust backend logic to solve real-world problems.
             </p>
           </div>
           
-          {/* AI Skills Highlight */}
+          {/* Updated Skills Highlight */}
           <div className="flex flex-wrap justify-center items-center gap-6 mt-10 opacity-80">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-              <Code2 className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm">Smart Contracts</span>
+              <Smartphone className="w-4 h-4 text-cyan-400" />
+              <span className="text-sm">App Development</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
               <Brain className="w-4 h-4 text-blue-400" />
@@ -140,7 +137,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
               <Zap className="w-4 h-4 text-purple-400" />
-              <span className="text-sm">3D Development</span>
+              <span className="text-sm">Blockchain</span>
             </div>
           </div>
         </div>
