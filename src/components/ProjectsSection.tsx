@@ -8,6 +8,12 @@ const ProjectsSection = () => {
     {
       title: "PIA Mobile Application",
       description: "Cross-platform mobile app built with React Native featuring comprehensive UI/UX improvements for Pakistan International Airlines.",
+      details: [
+        "Implemented responsive design for iOS and Android platforms",
+        "Enhanced user experience with modern UI components",
+        "Integrated real-time flight information and booking system",
+        "Optimized performance for smooth navigation"
+      ],
       icon: <Smartphone className="w-6 h-6" />,
       technologies: ["React Native", "UI/UX Design", "Cross-platform"],
       category: "Mobile Development",
@@ -15,7 +21,13 @@ const ProjectsSection = () => {
     },
     {
       title: "Email Automation System",
-      description: "Python-based solution for auto-fetching, storing, and organizing emails with attachments from Exchange Server 2010. Features UI for replies and auto-responses.",
+      description: "Python-based solution for auto-fetching, storing, and organizing emails with attachments from Exchange Server 2010.",
+      details: [
+        "Automated email fetching from Exchange Server 2010",
+        "Intelligent email categorization and attachment handling",
+        "Built intuitive UI for email management and responses",
+        "Implemented auto-response functionality"
+      ],
       icon: <Mail className="w-6 h-6" />,
       technologies: ["Python", "Exchange Server", "UI Development", "Automation"],
       category: "System Programming",
@@ -23,7 +35,13 @@ const ProjectsSection = () => {
     },
     {
       title: "DeFi Bank on Blockchain",
-      description: "Decentralized finance application built with smart contracts using Solidity and ERC-20 token standards on Ethereum blockchain.",
+      description: "Decentralized finance application built with smart contracts using Solidity and ERC-20 token standards.",
+      details: [
+        "Developed secure smart contracts on Ethereum blockchain",
+        "Implemented ERC-20 token functionality",
+        "Created decentralized lending and borrowing features",
+        "Integrated Web3 wallet connectivity"
+      ],
       icon: <Blocks className="w-6 h-6" />,
       technologies: ["Solidity", "Ethereum", "Smart Contracts", "ERC-20"],
       category: "Blockchain",
@@ -31,7 +49,13 @@ const ProjectsSection = () => {
     },
     {
       title: "Sorting Algorithm Performance Comparison",
-      description: "Multithreaded C application comparing performance of various sorting algorithms using pthreads and semaphores for concurrency.",
+      description: "Multithreaded C application comparing performance of various sorting algorithms using pthreads and semaphores.",
+      details: [
+        "Implemented multiple sorting algorithms (Quick, Merge, Heap)",
+        "Used pthreads for concurrent processing",
+        "Applied semaphores for thread synchronization",
+        "Generated detailed performance analysis reports"
+      ],
       icon: <BarChart3 className="w-6 h-6" />,
       technologies: ["C", "pthreads", "semaphores", "Performance Analysis"],
       category: "System Programming",
@@ -39,7 +63,13 @@ const ProjectsSection = () => {
     },
     {
       title: "Super Market Billing System",
-      description: "Object-oriented C++ application with modular CLI interface for managing supermarket billing operations efficiently.",
+      description: "Object-oriented C++ application with modular CLI interface for managing supermarket billing operations.",
+      details: [
+        "Designed modular architecture using OOP principles",
+        "Implemented inventory management system",
+        "Created comprehensive billing and receipt generation",
+        "Added customer management and discount features"
+      ],
       icon: <Package className="w-6 h-6" />,
       technologies: ["C++", "OOP", "CLI", "Modular Design"],
       category: "Desktop Application",
@@ -48,6 +78,12 @@ const ProjectsSection = () => {
     {
       title: "ATM Banking System",
       description: "Secure C-based ATM simulation system with comprehensive banking operations and security features.",
+      details: [
+        "Implemented secure PIN authentication system",
+        "Created balance inquiry and transaction history",
+        "Added cash withdrawal and deposit functionality",
+        "Built transaction logging and security measures"
+      ],
       icon: <CreditCard className="w-6 h-6" />,
       technologies: ["C", "Security", "Banking Operations", "System Design"],
       category: "System Programming",
@@ -105,7 +141,7 @@ const ProjectsSection = () => {
                 {project.description}
               </p>
               
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech) => (
                   <Badge 
                     key={tech} 
@@ -117,15 +153,20 @@ const ProjectsSection = () => {
                 ))}
               </div>
               
+              {/* Project Details */}
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-foreground mb-2">Key Features:</h4>
+                <ul className="space-y-1">
+                  {project.details.map((detail, detailIndex) => (
+                    <li key={detailIndex} className="text-sm text-muted-foreground flex items-start">
+                      <span className="w-1 h-1 bg-primary rounded-full mt-2 mr-2 flex-shrink-0"></span>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
               <div className="flex gap-2">
-                <Button 
-                  size="sm" 
-                  variant="outline"
-                  className="flex-1 group-hover:border-primary group-hover:text-primary transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Details
-                </Button>
                 <Button 
                   size="sm" 
                   variant="ghost"
