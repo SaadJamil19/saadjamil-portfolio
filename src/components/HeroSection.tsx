@@ -109,7 +109,6 @@ const HeroSection = () => {
             <Phone className="w-6 h-6" />
           </a>
           <a 
-            href="https://linkedin.com/in/saad-j-usmani" 
             href="https://www.linkedin.com/in/saad-j-usmani-/"
             target="_blank" 
             rel="noopener noreferrer"
