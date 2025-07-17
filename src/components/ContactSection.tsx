@@ -22,7 +22,7 @@ const ContactSection = () => {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
       value: "saad-j-usmani",
-      href: "https://linkedin.com/in/saad-j-usmani"
+      href: "https://www.linkedin.com/in/saad-j-usmani-/"
     },
     {
       icon: <Github className="w-5 h-5" />,
