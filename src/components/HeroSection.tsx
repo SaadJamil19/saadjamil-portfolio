@@ -150,13 +150,13 @@ const HeroSection = () => {
             className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-ai-glow hover:scale-105 transition-all duration-300 animate-ai-pulse"
           >
             <Brain className="w-5 h-5 mr-2" />
-            Explore AI Projects
+            Explore My Projects
           </Button>
           <Button 
             variant="outline" 
             size="lg"
             onClick={() => scrollToSection('projects-section')}
-            className="border-cyan-400/30 text-white hover:bg-cyan-400/10 hover:border-cyan-400/50 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
+            className="border-2 border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 hover:text-cyan-300 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
           >
             <Code2 className="w-5 h-5 mr-2" />
             View Portfolio
