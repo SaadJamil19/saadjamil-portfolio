@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       color: "primary"
     },
     {
-      title: "Email Automation System",
+      title: "PIA Email Automation System",
       description: "Python-based solution for auto-fetching, storing, and organizing emails with attachments from Exchange Server 2010.",
       details: [
         "Automated email fetching from Exchange Server 2010",

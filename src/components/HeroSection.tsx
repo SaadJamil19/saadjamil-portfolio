@@ -143,7 +143,7 @@ const HeroSection = () => {
         </div>
         
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in animation-delay-400">
+        <div className="flex justify-center mb-16 animate-fade-in animation-delay-400">
           <Button 
             size="lg" 
             onClick={() => scrollToSection('projects-section')}
@@ -152,21 +152,14 @@ const HeroSection = () => {
             <Brain className="w-5 h-5 mr-2" />
             Explore My Projects
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            onClick={() => scrollToSection('projects-section')}
-            className="border-2 border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 hover:text-cyan-300 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
-          >
-            <Code2 className="w-5 h-5 mr-2" />
-            View Portfolio
-          </Button>
         </div>
         
         {/* Contact Links */}
         <div className="flex justify-center gap-4 animate-fade-in animation-delay-600 mb-16">
           <a 
-            href="mailto:saadjamil196@gmail.com" 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=saadjamil196@gmail.com" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="p-4 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
           >
             <Mail className="w-5 h-5 group-hover:text-cyan-400 transition-colors" />
